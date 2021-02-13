@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Scope;
 public class AppConfig {
 
     @Bean
-    public Employee homer() {
+    public Employee employee0() {
         Employee employee = new Employee();
         employee.setFirstName("Homer");
         employee.setLastName("Simpson");
@@ -20,7 +20,7 @@ public class AppConfig {
     }
 
     @Bean
-    public Employee carlton() {
+    public Employee employee1() {
         Employee employee = new Employee();
         employee.setFirstName("Carlton");
         employee.setLastName("Carlson");
@@ -30,12 +30,13 @@ public class AppConfig {
     }
 
     @Bean
-    public Employee burns() {
+    public Employee employee2() {
         return new Employee("Charles", "Burns", 987654.32, "mr_burns@groening.com");
     }
 
     @Bean
-    @Scope("singleton")
+    @Scope("singleton") // Not necessary. Default value. Only here because it was
+                        // explicitly asked for in the assignment instructions.
     public Department nuclearEnergy() {
         Department department = new Department();
         department.setId(1);

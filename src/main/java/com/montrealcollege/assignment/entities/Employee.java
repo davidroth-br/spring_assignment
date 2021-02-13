@@ -61,15 +61,4 @@ public class Employee {
     public void setDepartment(com.montrealcollege.assignment.entities.Department department) {
         Department = department;
     }
-
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", salary=" + salary +
-                ", email='" + email + '\'' +
-                ", Department=" + Department +
-                '}';
-    }
 }

@@ -31,13 +31,4 @@ public class Department {
     public void setCity(String city) {
         this.city = city;
     }
-
-    @Override
-    public String toString() {
-        return "Department{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", city='" + city + '\'' +
-                '}';
-    }
 }
